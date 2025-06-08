@@ -13,5 +13,5 @@ An Ecomerrce application taht has been built with HTML, CSS and Tailwindcss.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/vaaluvishnu5146/Exclusive-Ecommerce-Starter/refs/heads/main/screenshot/1.png)
 
