@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./style.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-mons: #8b5d33;
+        --font-display: "Oswald", "sans-serif";
+      }
+    </style>
   </head>
   <body>
-    <h1 class="text-3xl font-bold">Exclusive</h1>
+    <h1 class="font-display text-3xl font-bold">Exclusive</h1>
+    <button class="w-[100px] h-[40px] bg-blue-500 rounded-full text-white">
+      Sign In
+    </button>
   </body>
 </html>
