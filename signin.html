@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Exclusive: 404 Not Found</title>
+    <title>Exclusive: Signup</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -14,6 +14,7 @@
         --desktop-page-padding: 150px;
         --content-section-padding: 50px;
         --font-poppins: "Poppins", sans-serif;
+        --image-bg: #cbe4eb;
       }
     </style>
     <link
@@ -83,24 +84,43 @@
       </div>
     </header>
     <main
-      class="px-(--mobile-page-padding) xl:px-(--desktop-page-padding) py-(--content-section-padding) h-100"
+      class="px-[25px] lg:px-(--desktop-page-padding) py-(--content-section-padding)"
     >
-      <div id="breadcrumbs">
-        <ul class="flex gap-x-3">
-          <li class="text-gray-400 text-sm">Home</li>
-          <li class="text-gray-400 text-sm">/</li>
-          <li class="text-gray-400 text-sm">404 Error</li>
-        </ul>
-      </div>
-      <div class="flex justify-center items-center h-full">
-        <div class="flex flex-col items-center">
-          <h1 class="text-5xl mb-5">404 NOT FOUND</h1>
-          <p class="text-sm text-black-400 mb-5">
-            Your visited page not found. You may go home page.
-          </p>
-          <button class="w-[200px] h-[50px] bg-red-700 rounded text-white">
-            Back to home page
-          </button>
+      <div class="flex">
+        <div
+          class="xs:hidden lg:w-1/2 h-[500px] bg-[url(./Assets/cartmob.png)] bg-contain bg-no-repeat"
+        ></div>
+        <div class="w-full lg:w-1/2 flex items-center justify-center">
+          <div class="w-full lg:w-2/3">
+            <h1 class="text-2xl">Login to Exclusive</h1>
+            <p class="text-md font-light mb-[50px]">Enter your details below</p>
+            <div class="w-full mb-[40px]">
+              <input
+                class="w-full border-b-2 border-gray-300 ps-[0px] pb-[10px]"
+                placeholder="Email or Phone Number"
+              />
+            </div>
+            <div class="w-full mb-[40px]">
+              <input
+                class="w-full border-b-2 border-gray-300 ps-[0px] pb-[10px]"
+                placeholder="Enter your Password"
+              />
+            </div>
+            <button class="w-full h-[50px] bg-red-700 rounded text-white mb-5">
+              Signin
+            </button>
+            <button
+              class="w-full h-[50px] bg-white rounded text-black mb-5 border-1 border-black-100"
+            >
+              <div class="flex items-center justify-center">
+                <img class="mr-3" src="./Assets/google.png" />
+                Sign in with Google
+              </div>
+            </button>
+            <p class="text-center">
+              Do not have an account? <a class="underline" href="#">Signup</a>
+            </p>
+          </div>
         </div>
       </div>
     </main>
