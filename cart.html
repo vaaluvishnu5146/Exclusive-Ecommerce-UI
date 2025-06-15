@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Exclusive</title>
+    <title>Cart : Exclusive</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -83,24 +83,125 @@
       </div>
     </header>
     <main
-      class="px-(--mobile-page-padding) xl:px-(--desktop-page-padding) py-(--content-section-padding) h-100"
+      class="px-(--mobile-page-padding) xl:px-(--desktop-page-padding) py-(--content-section-padding)"
     >
-      <div id="breadcrumbs">
+      <div class="mb-10" id="breadcrumbs">
         <ul class="flex gap-x-3">
           <li class="text-gray-400 text-sm">Home</li>
           <li class="text-gray-400 text-sm">/</li>
-          <li class="text-gray-400 text-sm">Shop</li>
+          <li class="text-gray-400 text-sm">Cart</li>
         </ul>
       </div>
-      <div class="flex justify-center items-center h-full">
-        <div class="flex flex-col items-center">
-          <h1 class="text-5xl mb-5">Shop Now</h1>
-          <p class="text-sm text-black-400 mb-5">
-            To resume shopping, You may go home page.
-          </p>
-          <button class="w-[200px] h-[50px] bg-red-700 rounded text-white">
-            Back to home page
-          </button>
+      <div class="flex justify-center items-center w-full h-full">
+        <div class="flex flex-col items-center w-[100%]">
+          <div id="cart-table" class="w-[100%] overflow-x-scroll">
+            <div class="flex justify-between h-auto mb-5">
+              <button
+                class="w-auto h-[50px] bg-white rounded text-black mb-5 border-1 border-black-100 px-5"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button
+                class="w-auto h-[50px] bg-white rounded text-black mb-5 border-1 border-black-100 px-5"
+              >
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </button>
+            </div>
+            <table class="w-[100%] mb-12">
+              <tr class="shadow-md h-[80px] rounded">
+                <th class="text-left px-[20px]">Product</th>
+                <th class="text-left px-[20px]">Price</th>
+                <th class="text-left px-[20px]">Quanity</th>
+                <th class="text-left px-[20px]">SubTotal</th>
+              </tr>
+              <tr class="shadow-md h-[50px] rounded h-[102px]">
+                <td class="text-left px-[20px]">
+                  <div class="flex items-center gap-x-5">
+                    <img src="./Assets/Gamepad-Cart-Small.png" />
+                    <p>Gaming Pad</p>
+                  </div>
+                </td>
+                <td class="text-left px-[20px]">$600</td>
+                <td class="text-left px-[20px]">
+                  <input type="number" placeholder="0" />
+                </td>
+                <td class="text-left px-[20px]">$600</td>
+              </tr>
+              <tr class="shadow-md h-[50px] rounded h-[102px]">
+                <td class="text-left px-[20px]">
+                  <div class="flex items-center gap-x-5">
+                    <img src="./Assets/Gamepad-Cart-Small.png" />
+                    <p>Gaming Pad</p>
+                  </div>
+                </td>
+                <td class="text-left px-[20px]">$600</td>
+                <td class="text-left px-[20px]">
+                  <input type="number" placeholder="0" />
+                </td>
+                <td class="text-left px-[20px]">$600</td>
+              </tr>
+              <tr class="shadow-md h-[50px] rounded h-[102px]">
+                <td class="text-left px-[20px]">
+                  <div class="flex items-center gap-x-5">
+                    <img src="./Assets/Gamepad-Cart-Small.png" />
+                    <p>Gaming Pad</p>
+                  </div>
+                </td>
+                <td class="text-left px-[20px]">$600</td>
+                <td class="text-left px-[20px]">
+                  <input type="number" placeholder="0" />
+                </td>
+                <td class="text-left px-[20px]">$600</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-y-[50px] md:gap-x-[100px]"
+      >
+        <div id="coupon-form">
+          <div
+            class="h-[50px] flex items-center font-serif relative rounded-sm gap-x-3"
+          >
+            <input
+              placeholder="Coupon code"
+              type="email"
+              class="w-full h-full font-poppins text-md border-2 border-black-100 rounded px-5"
+            />
+            <button
+              class="w-[200px] h-[50px] bg-red-700 rounded text-white px-5"
+            >
+              <div class="flex items-center justify-center">Apply Coupon</div>
+            </button>
+          </div>
+        </div>
+        <div id="cart-total" class="border-2 border-black-100 rounded p-5">
+          <h3 class="mb-3">Cart Total</h3>
+          <ul class="mb-3">
+            <li class="flex justify-between py-5 border-b-2 border-black-100">
+              <p class="font-bold">Sub Total</p>
+              <p>100</p>
+            </li>
+            <li class="flex justify-between py-5 border-b-2 border-black-100">
+              <p class="font-bold">Shipping</p>
+              <p>20</p>
+            </li>
+            <li class="flex justify-between py-5 border-black-100">
+              <p class="font-bold">Grand Total</p>
+              <p>120</p>
+            </li>
+          </ul>
+          <div class="flex justify-center">
+            <button
+              class="w-[full] h-[50px] bg-red-700 rounded text-white px-5"
+            >
+              <div class="flex items-center justify-center">
+                <i class="fa-solid fa-bag-shopping mr-3"></i>
+                Proceed to checkout
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </main>

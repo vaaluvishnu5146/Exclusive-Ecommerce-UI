@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart : Exclusive</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-mons: #8b5d33;
+        --font-display: "Oswald", "sans-serif";
+        --mobile-page-padding: 25px;
+        --desktop-page-padding: 150px;
+        --content-section-padding: 50px;
+        --font-poppins: "Poppins", sans-serif;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div
+        class="w-full h-[40px] bg-black px-(--mobile-page-padding) xl:px-(--desktop-page-padding)"
+      >
+        <div class="h-full flex justify-center items-center">
+          <p class="text-xs xl:text-md text-base text-white mr-3">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </p>
+          <a class="text-xs xl:text-md text-white underline font-bold" href="#"
+            >Show Now</a
+          >
+        </div>
+      </div>
+      <div
+        class="w-full h-[100px] border-b-2 border-gray-300 flex px-(--mobile-page-padding) xl:px-(--desktop-page-padding) justify-center items-center"
+      >
+        <div class="w-[60%] flex justify-between pr-[40px]">
+          <h1 class="text-2xl font-extrabold">Exclusive</h1>
+          <nav class="hidden xl:flex items-center">
+            <ul class="flex gap-x-10">
+              <li><a>Home</a></li>
+              <li><a>Contact</a></li>
+              <li><a>About</a></li>
+              <li><a>Signup</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="w-[40%] pl-[40px] flex items-center justify-between">
+          <div
+            class="hidden xl:flex bg-gray-100 w-[250px] h-[40px] px-[15px] items-center font-serif relative rounded-sm"
+          >
+            <input
+              placeholder="What are you looking for?"
+              class="w-full font-poppins text-xs"
+            />
+            <i class="fa-solid fa-magnifying-glass absolute right-[15px]"></i>
+          </div>
+          <div class="flex gap-x-[10px]">
+            <button class="w-[40px] h-[40px] hover:bg-gray-100 rounded-full">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+            <button class="w-[40px] h-[40px] hover:bg-gray-100 rounded-full">
+              <i class="fa-solid fa-shopping-cart"></i>
+            </button>
+            <button class="w-[40px] h-[40px] hover:bg-gray-100 rounded-full">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main
+      class="px-(--mobile-page-padding) xl:px-(--desktop-page-padding) py-(--content-section-padding)"
+    >
+      <div class="mb-10" id="breadcrumbs">
+        <ul class="flex gap-x-3">
+          <li class="text-gray-400 text-sm">Home</li>
+          <li class="text-gray-400 text-sm">/</li>
+          <li class="text-gray-400 text-sm">CheckOut</li>
+        </ul>
+      </div>
+      <div>
+        <h1 class="text-2xl mb-5">Billing Details</h1>
+        <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-[100px]">
+          <div id="checkout-form" class="">
+            <div class="flex flex-col mb-5" id="custom-input">
+              <label class="mb-3"
+                >First name<span class="text-red-700 ml-2">*</span></label
+              >
+              <input
+                class="bg-gray-100 rounded p-3"
+                placeholder="Enter First Name"
+              />
+            </div>
+            <div class="flex flex-col mb-5" id="custom-input">
+              <label class="mb-3"
+                >Address Line 1<span class="text-red-700 ml-2">*</span></label
+              >
+              <input
+                class="bg-gray-100 rounded p-3"
+                placeholder="Door No, Street Name or Road name"
+              />
+            </div>
+            <div class="flex flex-col mb-5" id="custom-input">
+              <label class="mb-3"
+                >Address Line 2<span class="text-red-700 ml-2">*</span></label
+              >
+              <input class="bg-gray-100 rounded p-3" placeholder="Landmark" />
+            </div>
+            <div class="flex flex-col mb-5" id="custom-input">
+              <label class="mb-3"
+                >City<span class="text-red-700 ml-2">*</span></label
+              >
+              <input class="bg-gray-100 rounded p-3" placeholder="Enter City" />
+            </div>
+            <div class="flex flex-col mb-5" id="custom-input">
+              <label class="mb-3"
+                >Area Pincode<span class="text-red-700 ml-2">*</span></label
+              >
+              <input
+                class="bg-gray-100 rounded p-3"
+                placeholder="Enter Pincode"
+              />
+            </div>
+            <div class="flex flex-col mb-5" id="custom-input">
+              <label class="mb-3"
+                >Email<span class="text-red-700 ml-2">*</span></label
+              >
+              <input
+                class="bg-gray-100 rounded p-3"
+                placeholder="Enter Email Address"
+              />
+            </div>
+            <div class="flex flex-col mb-5" id="custom-input">
+              <label class="mb-3"
+                >Phone number<span class="text-red-700 ml-2">*</span></label
+              >
+              <input
+                class="bg-gray-100 rounded p-3"
+                placeholder="Enter Phone number"
+              />
+            </div>
+            <div class="flex gap-x-2">
+              <input type="checkbox" />
+              <label
+                >Save this information for faster check-out next time</label
+              >
+            </div>
+          </div>
+          <div id="payment-form" class="">
+            <div id="products-list" class="mb-5">
+              <div class="flex justify-between items-center mb-3" id="product">
+                <div class="flex items-center gap-x-3">
+                  <img src="./Assets/Gamepad-Cart-Small.png" />
+                  <p>Gaming Console</p>
+                </div>
+                <div>
+                  <p>200</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center" id="product">
+                <div class="flex items-center gap-x-3">
+                  <img src="./Assets/Gamepad-Cart-Small.png" />
+                  <p>Gaming Console</p>
+                </div>
+                <div>
+                  <p>200</p>
+                </div>
+              </div>
+            </div>
+            <div id="cart-info" class="mb-3">
+              <ul class="mb-3">
+                <li
+                  class="flex justify-between py-5 border-b-2 border-black-100"
+                >
+                  <p class="font-bold">Sub Total</p>
+                  <p>100</p>
+                </li>
+                <li
+                  class="flex justify-between py-5 border-b-2 border-black-100"
+                >
+                  <p class="font-bold">Shipping</p>
+                  <p>20</p>
+                </li>
+                <li class="flex justify-between py-5 border-black-100">
+                  <p class="font-bold">Grand Total</p>
+                  <p>120</p>
+                </li>
+              </ul>
+            </div>
+            <div id="payment-options" class="mb-5">
+              <div
+                class="flex justify-between items-center mb-3"
+                id="payment-option"
+              >
+                <div class="flex items-center gap-x-3">
+                  <input type="radio" name="payment" />
+                  <p>Bank</p>
+                </div>
+                <div>
+                  <img src="./Assets/bankoptions.png" />
+                </div>
+              </div>
+              <div
+                class="flex justify-between items-center mb-3"
+                id="payment-option"
+              >
+                <div class="flex items-center gap-x-3">
+                  <input type="radio" name="payment" />
+                  <p>UPI</p>
+                </div>
+                <div>
+                  <img src="./Assets/upi.png" />
+                </div>
+              </div>
+              <div
+                class="flex justify-between items-center"
+                id="payment-option"
+              >
+                <div class="flex items-center gap-x-3">
+                  <input type="radio" name="payment" />
+                  <p>COD</p>
+                </div>
+                <div>
+                  <img src="./Assets/cash.png" />
+                </div>
+              </div>
+            </div>
+            <div id="coupon-form" class="mb-10">
+              <div
+                class="h-[50px] flex items-center font-serif relative rounded-sm gap-x-3"
+              >
+                <input
+                  placeholder="Coupon code"
+                  type="email"
+                  class="w-full h-full font-poppins text-md border-2 border-black-100 rounded px-5"
+                />
+                <button
+                  class="w-[200px] h-[50px] bg-red-700 rounded text-white px-5"
+                >
+                  <div class="flex items-center justify-center">
+                    Apply Coupon
+                  </div>
+                </button>
+              </div>
+            </div>
+            <button
+              class="w-[100%] h-[50px] bg-red-700 rounded text-white px-5"
+            >
+              <div class="flex items-center justify-center">
+                <i class="fa-solid fa-bag-shopping mr-3"></i>
+                Place Order
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="bg-black w-full h-auto lg:h-[300px] px-(--mobile-page-padding) xl:px-(--desktop-page-padding) py-[50px] text-white"
+    >
+      <div class="grid grid-cols-1 gap-y-10 lg:grid-cols-5 gap-x-10">
+        <div>
+          <h3 class="text-md font-bold mb-3">Exclusive</h3>
+          <p class="text-sm mb-3">Subscribe</p>
+          <p class="text-xs font-light mb-3">Get 10% off your first order</p>
+          <div
+            class="h-[40px] px-[15px] flex items-center font-serif relative rounded-sm border-2 border-white"
+          >
+            <input
+              placeholder="Enter your email"
+              type="email"
+              class="w-full h-full font-poppins text-xs"
+            />
+            <i class="fa-solid fa-paper-plane absolute right-[15px]"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-md font-bold mb-3">Support</h3>
+          <p class="text-xs font-light mb-3">Line 1</p>
+          <p class="text-xs font-light mb-3">Line 2</p>
+          <p class="text-xs font-light mb-3">Line 3</p>
+        </div>
+        <div>
+          <h3 class="text-md font-bold mb-3">Account</h3>
+          <p class="text-xs font-light mb-3">Login</p>
+          <p class="text-xs font-light mb-3">My Account</p>
+          <p class="text-xs font-light mb-3">Cart</p>
+          <p class="text-xs font-light mb-3">Register</p>
+          <p class="text-xs font-light mb-3">Shop</p>
+        </div>
+        <div>
+          <h3 class="text-md font-bold mb-3">Quick Link</h3>
+          <p class="text-xs font-light mb-3">Privacy Policy</p>
+          <p class="text-xs font-light mb-3">Terms of use</p>
+          <p class="text-xs font-light mb-3">FAQ</p>
+          <p class="text-xs font-light mb-3">Contact</p>
+        </div>
+        <div>
+          <h3 class="text-md font-bold mb-3">Download App</h3>
+          <p class="text-xs font-light mb-3">Save $3 with App New User Only</p>
+          <div class="flex gap-x-[10px] mb-3">
+            <img src="./Assets/QrCode.png" />
+            <div>
+              <img src="./Assets/GooglePlay.png" />
+              <img src="./Assets/AppStore.png" />
+            </div>
+          </div>
+          <div class="flex gap-x-[10px]">
+            <button class="w-[40px] h-[40px]">
+              <i class="fa-brands fa-facebook text-md"></i>
+            </button>
+            <button class="w-[40px] h-[40px]">
+              <i class="fa-brands fa-twitter"></i>
+            </button>
+            <button class="w-[40px] h-[40px]">
+              <i class="fa-brands fa-instagram"></i>
+            </button>
+            <button class="w-[40px] h-[40px]">
+              <i class="fa-brands fa-linkedin"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
